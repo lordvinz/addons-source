@@ -23,10 +23,6 @@
 # After changing this file, check it on:
 #   http://lint.travis-ci.org/
 
-
-# After changing this file, check it on:
-#   http://lint.travis-ci.org/
-
 sudo: required
 dist: trusty
 language: python
@@ -91,7 +87,7 @@ script:
 # FIXME: This should have run from the current directory, rather than from
 # gramps, because there is some test code in that directory.
 
-    -  GRAMPS_RESOURCES=$TRAVIS_BUILD_DIR/../gramps PYTHONPATH=$TRAVIS_BUILD_DIR/../gramps nosetests3 --exclude=DynamicWeb -vv
+ -  GRAMPS_RESOURCES=$TRAVIS_BUILD_DIR/../gramps PYTHONPATH=$TRAVIS_BUILD_DIR/../gramps nosetests3 --exclude=DynamicWeb -vv
 
 # give an error for any trailing whitespace
  - if git --no-pager grep --color -n --full-name '[ 	]$' -- \*.py; then
