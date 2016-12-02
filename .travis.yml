@@ -77,6 +77,8 @@ before_script:
  - mkdir -p $HOME/.gramps/gramps50/plugins
 # Copy Addons to Gramps Addons directory
  - cp -r * $HOME/.gramps/gramps50/plugins/
+# Create css directory used by webstuff
+ - mkdir -p $HOME/.gramps/css
 
 script:
 # Ignore the virtualenv entirely. Use nosetests3, python3 (3.4.0) and coverage
