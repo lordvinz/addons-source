@@ -23,9 +23,13 @@
 # After changing this file, check it on:
 #   http://lint.travis-ci.org/
 
+
+# After changing this file, check it on:
+#   http://lint.travis-ci.org/
+
 sudo: required
 dist: trusty
-language: c
+language: python
 python:
  - 3.3 # This is irrelevant, because the virtualenv is not used at all
 
